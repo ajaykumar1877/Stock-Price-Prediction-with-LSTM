@@ -1,11 +1,21 @@
 Stock Price Prediction using LSTM
-This project uses a Long Short-Term Memory (LSTM) neural network to predict the closing price of a stock. The model is built using Keras/TensorFlow, and it fetches historical stock data from Yahoo Finance.
 
-Description
-1.The Python script stock_predictor.py performs the following steps:
-2,Fetches Data: Downloads historical stock data for a specified ticker (e.g., AAPL for Apple Inc.) from Yahoo Finance.
-3.Preprocesses Data: Cleans and scales the 'Close' price data to prepare it for the neural network.
-4.Builds LSTM Model: Constructs a sequential LSTM model designed to learn from time-series data.
-5.Trains the Model: Trains the model on 80% of the historical data.
-6.Makes Predictions: Uses the trained model to predict stock prices on the remaining 20% of the data (the test set).
-7.Visualizes Results: Plots the training data, actual stock prices, and the model's predictions on a single chart for comparison.
+This project leverages a Long Short-Term Memory (LSTM) neural network to forecast the closing price of stocks. By utilizing historical stock market data from Yahoo Finance, the model is trained to identify time-series patterns and generate predictions for future price movements. The implementation is carried out in Python using Keras/TensorFlow for deep learning and supporting libraries for data handling and visualization.
+
+Key Features
+
+Data Collection: Automatically fetches historical stock data (e.g., Apple Inc. – AAPL) from Yahoo Finance.
+
+Data Preprocessing: Cleans and normalizes the closing price values to make the dataset suitable for neural network training.
+
+Model Architecture: Builds a sequential LSTM model capable of capturing temporal dependencies in stock price movements.
+
+Training: Trains the model on 80% of the historical dataset, allowing it to learn key trends and patterns.
+
+Prediction: Evaluates the trained model on the remaining 20% of the data to generate stock price forecasts.
+
+Visualization: Produces a comparative plot showing the training data, actual test prices, and predicted prices to highlight the model’s performance.
+
+Outcome
+
+The project demonstrates how deep learning models like LSTM can be applied to financial time-series forecasting. It provides a foundation for exploring advanced stock prediction strategies, risk analysis, and algorithmic trading systems.
